@@ -10,9 +10,9 @@ anonymous function and then applied to where applicable.
 function Header() {
     return (
         <ThemeContextConsumer>
-            {theme => (
-                <header className={`${theme}-theme`}>
-                    <h1>{theme == "light" ? "Light" : "Dark"} Theme</h1>
+            {context => (
+                <header className={`${context.theme}-theme`}>
+                    <h1>{context.theme == "light" ? "Light" : "Dark"} Theme</h1>
                 </header>
             )}
         </ThemeContextConsumer>

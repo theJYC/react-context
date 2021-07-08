@@ -3,7 +3,7 @@ import {ThemeContextConsumer} from "./themeContext"
 
 function Button(props) {
     return (
-        <button className={`${props.theme}-theme`}>Switch Theme</button>
+        <button className={`${props.theme}-theme`} onClick={props.toggleTheme}>Switch Theme</button>
     )
 }
 

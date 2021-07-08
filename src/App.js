@@ -10,8 +10,8 @@ function App() {
     <>
       <Header/>
       <ThemeContextConsumer>
-          {theme => (
-            <Button theme={theme}/>
+          {context => (
+            <Button theme={context.theme} toggleTheme={context.toggleTheme}/>
           )}
       </ThemeContextConsumer>
       <Button/>

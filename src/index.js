@@ -11,7 +11,7 @@ const {Provider} = ThemeContext
 
 //wrapping App around context provider, passing in value:
 ReactDOM.render(
-    <Provider value={"dark"}>
+    <Provider value={"light"}>
         <App/>
     </Provider>,
     document.getElementById("root")

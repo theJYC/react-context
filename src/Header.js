@@ -1,7 +1,5 @@
 import React from "react"
-import ThemeContext from "./themeContext"
-
-const {Consumer} = ThemeContext
+import {ThemeContextConsumer} from "./themeContext"
 
 /*
 N.B. Consumer will need to follow the render prop pattern,
@@ -11,13 +9,13 @@ anonymous function and then applied to where applicable.
 
 function Header() {
     return (
-        <Consumer>
+        <ThemeContextConsumer>
             {theme => (
                 <header className={`${theme}-theme`}>
                     <h1>{theme == "light" ? "Light" : "Dark"} Theme</h1>
                 </header>
             )}
-        </Consumer>
+        </ThemeContextConsumer>
     )
 }
 

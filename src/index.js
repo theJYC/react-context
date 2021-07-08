@@ -4,15 +4,13 @@ import ReactDOM from "react-dom"
 import "./style.css"
 import App from "./App"
 
-//importing ThemeContext in order to establish Provider below:
-import ThemeContext from "./themeContext"
-
-const {Provider} = ThemeContext
+//importing ThemeContextProvider class component:
+import {ThemeContextProvider} from "./themeContext"
 
 //wrapping App around context provider, passing in value:
 ReactDOM.render(
-    <Provider value={"dark"}>
+    <ThemeContextProvider>
         <App/>
-    </Provider>,
+    </ThemeContextProvider>,
     document.getElementById("root")
 )

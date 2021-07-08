@@ -1,9 +1,16 @@
 import React from "react"
 
 //creating context and assigning the ThemeContext constant variable
-const ThemeContext = React.createContext()
+const {Provider, Consumer} = React.createContext()
 
-//essentially the only two objects that need to be destructured
-const {Provider, Consumer} = ThemeContext
+class ThemeContextProvider extends React.Component {
+    render() {
+        return (
+            <Provider value={"dark"}>
+                {this.props.children}
+            </Provider>
+        )
+    }
+}
 
-export default ThemeContext
+export {ThemeContextProvider, Consumer as ThemeContextConsumer}

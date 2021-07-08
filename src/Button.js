@@ -1,5 +1,5 @@
 import React from "react"
-import ThemeContext from "./themeContext"
+import {ThemeContextConsumer} from "./themeContext"
 
 function Button(props) {
     return (
@@ -7,4 +7,7 @@ function Button(props) {
     )
 }
 
+Button.defaultProps = {
+    theme : "light"
+}
 export default Button

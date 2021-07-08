@@ -8,9 +8,7 @@ function Bio() {
     return (
         <ThemeContext.Consumer>
             {theme => (
-                <div className={`${theme}-theme`}>
-                    <h4>This is an illustrative demo to demonstrate Context API in action.</h4>
-                </div>
+                    <h4 className={`${theme}-theme`}>This is an illustrative demo to demonstrate Context API in action.</h4>
             )}
         </ThemeContext.Consumer>
     )

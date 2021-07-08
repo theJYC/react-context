@@ -8,7 +8,7 @@ function Header() {
         <Consumer>
             {theme => (
                     <header className={`${theme}-theme`}>
-                        <h1>Light Theme</h1>
+                        <h1>{theme == "light" ? "Light" : "Dark"} Theme</h1>
                     </header>
             )}
         </Consumer>

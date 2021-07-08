@@ -16,11 +16,13 @@ button {
 .dark-theme {
     background-color: #333333;
     color: whitesmoke;
+    height: 100%;
+
 }
 
 .light-theme {
     background-color: whitesmoke;
     color: #333333;
+    height: 100%;
 }
-
 

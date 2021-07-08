@@ -6,11 +6,11 @@ import Bio from "./Bio"
 
 function App() {
   return (
-    <div>
+    <>
       <Header/>
       <Bio/>
       <Button/>
-    </div>
+    </>
   )
 }
 
